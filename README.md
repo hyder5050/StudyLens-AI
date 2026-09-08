@@ -81,7 +81,7 @@ lib/
 │   └── api_config.dart
 │
 ├── models/
-│   ├── sudy_result.dart
+│   ├── study_result.dart
 │   └── quiz_question.dart
 │
 ├── screens/
@@ -124,37 +124,31 @@ The application focuses on:
 
 ## 🚀 Getting Started
 
-Follow the steps below to run StudyLens AI on your computer.
-
 ### Prerequisites
 
-Before running the application, make sure you have:
+Before running StudyLens AI, make sure you have:
 
-* **Flutter SDK** installed
+* **Flutter SDK**
 * **Dart SDK**
 * **Android Studio** or another Flutter-compatible IDE
 * A **Google Gemini API key**
-* A physical Android device or Android Emulator
+* A physical Android device or Android emulator
 
-You can verify Flutter installation by running:
+You can verify your Flutter installation with:
 
 ```bash
 flutter doctor
 ```
 
----
-
 ### Installation
 
 #### 1. Clone the Repository
-
-Open your terminal or PowerShell and run:
 
 ```bash
 git clone https://github.com/hyder5050/StudyLens-AI.git
 ```
 
-#### 2. Navigate to the Project
+#### 2. Open the Project Folder
 
 ```bash
 cd StudyLens-AI
@@ -162,23 +156,15 @@ cd StudyLens-AI
 
 #### 3. Install Dependencies
 
-Run:
-
 ```bash
 flutter pub get
 ```
 
 #### 4. Create the Environment File
 
-Create a file named:
+Create a file named `.env` in the root directory of the project.
 
-```text
-.env
-```
-
-Place the `.env` file in the **root directory** of the project.
-
-Your project should look like:
+The project structure should look like:
 
 ```text
 StudyLens-AI/
@@ -210,11 +196,9 @@ Connect an Android device or start an emulator, then run:
 flutter run
 ```
 
----
+### 🔐 Security
 
-## 🔐 Security
-
-**Do not upload your `.env` file or Gemini API key to GitHub.**
+> **Important:** Never commit or upload your `.env` file or Gemini API key to GitHub.
 
 Make sure `.env` is included in your `.gitignore` file:
 
@@ -222,15 +206,11 @@ Make sure `.env` is included in your `.gitignore` file:
 .env
 ```
 
-API keys should never be publicly exposed in a GitHub repository.
-
-> **Note:** This project uses a client-side API configuration for demonstration and educational purposes. For a production application, API requests should ideally be handled through a secure backend so the API key is not exposed in the mobile application.
+For production applications, API requests should ideally be handled through a secure backend so that API credentials are not exposed in the client application.
 
 ---
 
 ## 📱 Application Flow
-
-The main application flow is:
 
 ```text
 Home Screen
@@ -245,51 +225,48 @@ Google Gemini API
      ↓
 Study Result Screen
      ↓
-┌───────────────┐
-│    Summary    │
-│ Key Concepts  │
-│ Explanation   │
-│     Quiz      │
-└───────────────┘
-        ↓
-    Quiz Screen
-        ↓
-   Quiz Results
+┌───────────────────┐
+│      Summary      │
+│   Key Concepts    │
+│    Explanation    │
+│       Quiz        │
+└───────────────────┘
+          ↓
+     Quiz Screen
+          ↓
+     Quiz Results
 ```
 
 ---
 
 ## 🤖 AI Assistance Disclosure
 
-AI tools were used during the development of StudyLens AI for:
+AI tools used during development:
 
-* Coding assistance
-* Debugging
-* Project planning
-* UI/UX ideas
-* Documentation
-* Problem solving
-* Improving parts of the application
+ChatGPT — used as a development assistant for brainstorming, coding guidance, debugging, problem solving, and documentation support.
+Google Gemini API — integrated directly into StudyLens AI to generate study summaries, key concepts, simple explanations, and multiple-choice quiz questions.
 
-All AI-assisted suggestions were reviewed, tested, and integrated by the developer.
+ChatGPT was used only as a development assistance tool and is not integrated into the application.
 
-The core project idea, implementation decisions, testing, and final integration were handled by the developer.
+The Google Gemini API is the AI service used by the StudyLens AI application itself.
+
+All AI-assisted suggestions were reviewed, tested, modified where necessary, and integrated by the developer.
 
 ---
 
 ## 🏆 Hackathon
 
-This project was developed and presented as part of a **Hackathon 2026** project.
+StudyLens AI was built and submitted for the:
 
-### Project Category
+**Global Innovation Build Challenge V2**
 
-**Open — General Technical Invention**
+**Track:** Open — General Technical Invention
 
 ### Project Focus
 
 **AI + Education + Flutter**
 
-StudyLens AI demonstrates how generative AI can be integrated into a mobile application to create a more interactive and personalized study experience.
+StudyLens AI demonstrates how generative AI can be integrated into a mobile application to transform study material into structured and interactive learning resources.
 
 ---
 
@@ -345,9 +322,9 @@ to create a simple and useful AI-powered learning assistant.
 
 ## 📂 Repository
 
-GitHub Repository:
+The complete source code is available on GitHub:
 
-https://github.com/hyder5050/StudyLens-AI
+**[StudyLens AI — GitHub Repository](https://github.com/hyder5050/StudyLens-AI)**
 
 ---
 
